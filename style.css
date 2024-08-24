@@ -68,7 +68,7 @@ button{
 }
 #QRImg{
     width: fit-content;
-    padding: 0.5vw;
+    padding: 0.8vw;
 }
 #imgBox.show-img{
     max-height: 100vh;
@@ -106,10 +106,25 @@ button{
 /* Mobile View */
 @media (max-width: 803px){
     #container{
+        overflow: hidden;
         width: 90vw;
         border-radius: 2vw;
     }
-    #inputText{
-    border-radius: 0.6vw;
+    input{
+        border-radius: 10px;
+        padding: 5px 5px;
+        width: 60%;
+        text-align: center;
+    }
+    button{
+        border-radius: 10px;
+        padding: 10px 10px;
+        width: 60%;
+    }
+    #QRImg{
+        padding: 7px;
+    }
+    #imgBox.show-img{
+        border-radius: 10px;
     }
 }
