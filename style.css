@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(1, 1, 39);
+}
+#container{
+    width: 60vh;
+    min-height: 50vh;
+    background-color: #fff;
+    border-radius: 1vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h3{
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+}
+input{
+    width: 50%;
+    border-radius: 0.6vw;
+    outline: 0;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 5vh;
+    padding: 0.5vw;
+}
+button{
+    width: 50%;
+    background: #494eea;
+    color: white;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0.6vw;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    padding: 0.8vw;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+}
+#imgBox{
+    width: 30vw;
+    height: fit-content;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    max-height: 0;
+    transition: max-height 1s;
+}
+#QRImg{
+    width: fit-content;
+    padding: 0.5vw;
+}
+#imgBox.show-img{
+    max-height: 100vh;
+    width: fit-content;
+    margin: 0.5vw auto;
+    border: 1px solid black;
+    border-radius: 0.5vw;
+}
+.error{
+    animation: shake 0.1s linear 10;
+}
+@keyframes shake{
+    0%{
+        transform: translateX(0);
+        border-color: red;
+    }
+    25%{
+        transform: translateX(-2px);
+        border-color: red;
+    }
+    50%{
+        transform: translateX(0);
+        border-color: red;
+    }
+    75%{
+        transform: translateX(2px);
+        border-color: red;
+    }
+    100%{
+        transform: translateX(0);
+        border-color: red;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 803px){
+    #container{
+        width: 90vw;
+        border-radius: 2vw;
+    }
+    #inputText{
+    border-radius: 0.6vw;
+    }
+}
