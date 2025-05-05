@@ -3,7 +3,9 @@
 A user-friendly web application that allows you to create QR codes instantly. With the help of the [QRserver API](https://goqr.me/api/), users can:  
 - Enter any text or URL to generate a QR code.  
 - View the generated QR code in real-time.  
-- Download the QR code for offline use.  
+- Download the QR code for offline use.
+
+![ScreenShot](image.png)
 
 ## 🌐 Live Demo  
 [Click here to view the QR Generator](https://amankumar9958.github.io/QRGenerator/)  
